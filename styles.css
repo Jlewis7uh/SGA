@@ -1,73 +1,104 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 header {
-    background-color: #C8102E;
-    color: white;
-    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: auto;
 }
 
-header h1 {
-    margin: 0;
+h1, h2 {
+    margin-bottom: 20px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: url('https://example.com/uh-campus.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero .btn {
-    background-color: #C8102E;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 10px;
-    display: inline-block;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 section {
-    padding: 40px 0;
+    margin: 20px 0;
 }
 
 footer {
-    background-color: #222;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    margin-top: 20px;
 }
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
